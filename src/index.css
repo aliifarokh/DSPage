@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: ali;
+  src: url(./assets/font/josefin/static/JosefinSans-Regular.ttf);
+}
+
+@layer utilities {
+  .bg-gradient-to-r {
+    background: linear-gradient(to right, #575761 6%, #AEAEC2 100%);
+  }
+
+  .text-gradient {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@keyframes updown {
+  from {
+    transform: translateX(-50%)translateY(-55%);
+  }
+
+  to {
+    transform: translateX(-50%)translateY(-45%);
+  }
+}
+
+
+*::-webkit-scrollbar {
+  width: 10px;
+  position: relative;
+  z-index: 99999;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ebebeb;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #adadad;
+  border-radius: 14px;
+
+}
